@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+*::selection{
+    background-color: #E1E289;
+}
+
+
+.text1 {
+    color: #99AA38;
+}
+.gen-text{
+    background-color: #E1E289 ;
+    text-align: center;
+    padding:20px;
+}
+
+.gen-text .content .text1{
+    font-size: 40px;
+}
+
+.gen-text .content .text1 span{
+    color: #14591D;
+    font-weight: 500;
+}
+
+.dancer {
+    background: #14591D;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.contain {
+    width:850px;
+    height:450px;
+    position: absolute;
+    top: 50%;
+    left:45%;
+    transform: translate(-50%,-50%);
+   
+}
+
+
+
+.user-img {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 90%;
+}
+
+.user-img img{
+    height: 90%;
+    width: 120%;
+    border-radius: 10%;
+
+}
+
+.user-text{
+    background-color: #E1E289; 
+    height: 340px; 
+    width: 500px;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    border-radius: 0px;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.home-content{
+    padding: 20px;
+    background-color:#99AA38;
+    padding-top: 92rem;
+}
+
+.hc-head{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.home-content .home-bio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1rem;
+} 
+
+.legabio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:0.1rem;
+}
+
+.trans{
+    background: rgba(255, 255, 255, 0.363);
+    padding:30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.awards{
+  
+    background-color: #14591D;
+    color: azure;
+    padding:20px;
+    margin: 10px;   
+}
+
+.trans-con {
+    padding:30px;
+    text-align:justify;
+}
+
+.trans-head{
+    text-align:center;
+    padding:10px;
+}
+
+.biblio{
+    padding: 20px;
+    background-color: #99AA38;
+    text-align: center;
+}
+
+.biblio .a{
+    color: yellow;
+}
+
+.lega{
+    padding: 20px;
+    background-color: #ACD2ED;
+}
+
+.legacy{
+    padding: 30px;
+    text-align: justify;
+}
+
+.quotes{
+    background-color: #99AA38;
+    padding: 30px;
+}
+
+.quote-head{
+    padding:20px 100px 20px 100px;
+    text-align: justify;
+
+}
+
+.quotes .qp{
+    padding-right: 100px;
+    text-align: right;
+    font-weight:500;
+    font-size: 25px;
+
+}
+
+.awards-con{
+    padding:5px;
+    text-align:center;
+    align-content: center;
+}
+
+.back{
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgb(255, 208, 216);
+    text-align: center;
+}
+
+#mainlink{
+    color: rgb(97, 6, 139);
+    text-decoration: none;
+}
+
+#mainlink:hover{
+    color: rgb(185, 12, 228);
+    text-decoration: underline;
+}
+
+table, th, td {
+    border:1px solid black;
+    color: white;
+
+  }
+
+  table {
+     position: absolute;
+     left: 20%;
+     max-width: 1000px;
+     width: 100%;
+    
+  }
+
+  td {
+    padding: 1rem 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  caption {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #14591D;
+    font-weight: 700;
+  }
+
+  caption:hover {
+    text-decoration: underline;
+  }
+
+  td:nth-child(1) {
+    color: #14591D;
+    font-weight: 700;
+  }
+
+  @media (max-width: 1200px) {
+     table {
+        left: 10%;
+     }
+
+     td{
+        font-size: 0.8rem;
+     }
+
+     .home-content{
+
+        padding-top: 72rem;
+    }
+  }
+
+  @media (max-width: 1052px) {
+    .user-img img{
+        height: 70%;
+        border-radius: 50%;
+    
+    }
+
+    .user-img {
+        margin-right: 6rem;
+    }
+
+   .user-text {
+    height: 310px; 
+    width: 400px;
+    padding: 10px;
+    margin-left: 5rem;
+   }
+  
+  }
+
+  @media (max-width: 1000px) {
+    table {
+       left: 6%;
+    }
+
+    @media (max-width: 897px) {
+        .home-content{
+
+            padding-top: 76rem;
+        }
+    }
+ }
